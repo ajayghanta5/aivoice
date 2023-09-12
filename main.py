@@ -49,6 +49,8 @@ def run_alexa():
         app = command.replace('close', '')
         talk('closing ' + app)
         AppOpener.close(app)
+    elif 'name' in command:
+        talk('your name is ajay')
     elif 'play' in command:
         song = command.replace('play', '')
         talk('playing ' + song)
